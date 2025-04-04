@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* transition when theme changes */
+* {
+  @apply transition-colors duration-200;
+}
+
+@theme inline {
+  /* color for light (tailwindcss variable) */
+  --light: var(--color-neutral-100);
+
+  /* color for dark (tailwindcss variable) */
+  --dark: var(--color-neutral-900);
+
+  /* theme's bg color */
+  --color-theme-bg: var(--theme-bg);
+
+  /* theme's text color */
+  --color-theme-text: var(--theme-text);
+}
+
+/* For light mode */
+.light {
+  /* light bg */
+  --theme-bg: var(--light);
+
+  /* dark text */
+  --theme-text: var(--dark);
+  /* --theme-border: ; */
+}
+
+/* For dark mode */
+.dark {
+  /* dark bg */
+  --theme-bg: var(--dark);
+
+  /* light text */
+  --theme-text: var(--light);
+  /* --theme-border: ; */
+}
