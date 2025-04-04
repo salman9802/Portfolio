@@ -1,5 +1,54 @@
 @import "tailwindcss";
 
+@layer base {
+  /* font face declarations */
+  @font-face {
+    font-family: "IBM Plex Sans";
+    font-weight: 100;
+    src: url("assets/fonts/IBMPlexSans-Thin.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "IBM Plex Sans";
+    font-weight: 200;
+    src: url("assets/fonts/IBMPlexSans-ExtraLight.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "IBM Plex Sans";
+    font-weight: 300;
+    src: url("assets/fonts/IBMPlexSans-Light.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "IBM Plex Sans";
+    font-weight: 400;
+    src: url("assets/fonts/IBMPlexSans-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    src: url("assets/fonts/IBMPlexSans-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "IBM Plex Sans";
+    font-weight: 600;
+    src: url("assets/fonts/IBMPlexSans-SemiBold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "IBM Plex Sans";
+    font-weight: 700;
+    src: url("assets/fonts/IBMPlexSans-Bold.woff2") format("woff2");
+  }
+  /* @font-face {
+    font-family: "IBM Plex Sans";
+    font-weight: 800;
+    src: url("assets/fonts/") format("woff2");
+  }
+  @font-face {
+    font-family: "IBM Plex Sans";
+    font-weight: 900;
+    src: url("assets/fonts/IBMPlexSans-Thin.woff2") format("woff2");
+  } */
+}
+
 /* transition when theme changes */
 * {
   @apply transition-colors duration-200;
@@ -8,15 +57,17 @@
 @theme inline {
   /* color for light (tailwindcss variable) */
   --light: var(--color-neutral-100);
-
   /* color for dark (tailwindcss variable) */
   --dark: var(--color-neutral-900);
 
   /* theme's bg color */
   --color-theme-bg: var(--theme-bg);
-
   /* theme's text color */
   --color-theme-text: var(--theme-text);
+
+  /* fonts */
+  --font-ibm-plex-sans: "IBM Plex Sans";
+  /* --font-ibm-plex-mono: "IBM Plex Mono"; */
 }
 
 /* For light mode */
