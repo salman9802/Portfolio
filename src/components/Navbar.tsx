@@ -1,8 +1,6 @@
-import ThemeSelectButton from "./ThemeSelectButton";
+import ThemeSelectButton from "./ThemeMenu";
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <div className="py-4">
       <ThemeSelectButton />

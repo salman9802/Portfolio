@@ -61,7 +61,7 @@
   --dark: var(--color-neutral-900);
 
   /* theme's bg color */
-  --color-theme-bg: var(--theme-bg);
+  --color-theme-base: var(--theme-base);
   /* theme's text color */
   --color-theme-text: var(--theme-text);
 
@@ -73,7 +73,7 @@
 /* For light mode */
 .light {
   /* light bg */
-  --theme-bg: var(--light);
+  --theme-base: var(--light);
 
   /* dark text */
   --theme-text: var(--dark);
@@ -83,7 +83,7 @@
 /* For dark mode */
 .dark {
   /* dark bg */
-  --theme-bg: var(--dark);
+  --theme-base: var(--dark);
 
   /* light text */
   --theme-text: var(--light);
