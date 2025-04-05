@@ -1,9 +1,13 @@
-import React from "react";
+import ThemeSelectButton from "./ThemeSelectButton";
 
 type Props = {};
 
 const Navbar = (props: Props) => {
-  return <div>Navbar</div>;
+  return (
+    <div className="py-4">
+      <ThemeSelectButton />
+    </div>
+  );
 };
 
 export default Navbar;

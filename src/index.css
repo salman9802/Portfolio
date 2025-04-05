@@ -51,7 +51,7 @@
 
 /* transition when theme changes */
 * {
-  @apply transition-colors duration-200;
+  @apply transition-colors duration-150;
 }
 
 @theme inline {
