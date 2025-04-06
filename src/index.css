@@ -84,15 +84,14 @@
     }
   }
   .custom-gradient {
-    /* @apply bg-gradient-to-r from-emerald-500 to-orange-500 bg-clip-text text-transparent; */
     background-clip: text !important;
     background-size: 200% !important;
     color: transparent;
     background: linear-gradient(
       to right,
-      var(--color-emerald-500),
+      var(--color-primary),
       var(--color-purple-500),
-      var(--color-orange-500)
+      var(--color-accent)
     );
     animation: gradient-animation 5s infinite alternate !important;
   }
@@ -131,4 +130,7 @@
   /* fonts */
   --font-ibm-plex-sans: "IBM Plex Sans";
   /* --font-ibm-plex-mono: "IBM Plex Mono"; */
+
+  --color-primary: var(--color-emerald-500);
+  --color-accent: var(--color-orange-500);
 }
