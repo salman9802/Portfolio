@@ -49,9 +49,72 @@
   } */
 }
 
-/* transition when theme changes */
-* {
-  @apply transition-colors duration-150;
+@layer components {
+  /* transition when theme changes */
+  * {
+    @apply transition-colors duration-150;
+  }
+
+  /* For light mode */
+  .light {
+    /* light bg */
+    --theme-base: var(--light);
+
+    /* dark text */
+    --theme-text: var(--dark);
+    /* --theme-border: ; */
+  }
+
+  /* For dark mode */
+  .dark {
+    /* dark bg */
+    --theme-base: var(--dark);
+
+    /* light text */
+    --theme-text: var(--light);
+    /* --theme-border: ; */
+  }
+  /* custom gradient */
+  @keyframes gradient-animation {
+    0% {
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
+  }
+  .custom-gradient {
+    /* @apply bg-gradient-to-r from-emerald-500 to-orange-500 bg-clip-text text-transparent; */
+    background-clip: text !important;
+    background-size: 200% !important;
+    color: transparent;
+    background: linear-gradient(
+      to right,
+      var(--color-emerald-500),
+      var(--color-purple-500),
+      var(--color-orange-500)
+    );
+    animation: gradient-animation 5s infinite alternate !important;
+  }
+
+  /* @keyframes gradientTransition {
+    0% {
+      background: linear-gradient(to right, #3b82f6, #9333ea);
+    }
+    50% {
+      background: linear-gradient(to right, #34d399, #fbbf24);
+    }
+    100% {
+      background: linear-gradient(to right, #3b82f6, #9333ea);
+    }
+  }
+
+  .gradient-animation {
+    background-clip: text !important;
+    color: transparent;
+    transition: background 200ms ease-in-out;
+    animation: gradientTransition 5s ease-in-out infinite;
+  } */
 }
 
 @theme inline {
@@ -68,24 +131,4 @@
   /* fonts */
   --font-ibm-plex-sans: "IBM Plex Sans";
   /* --font-ibm-plex-mono: "IBM Plex Mono"; */
-}
-
-/* For light mode */
-.light {
-  /* light bg */
-  --theme-base: var(--light);
-
-  /* dark text */
-  --theme-text: var(--dark);
-  /* --theme-border: ; */
-}
-
-/* For dark mode */
-.dark {
-  /* dark bg */
-  --theme-base: var(--dark);
-
-  /* light text */
-  --theme-text: var(--light);
-  /* --theme-border: ; */
 }
