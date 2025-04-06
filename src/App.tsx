@@ -4,6 +4,7 @@ import Profile from "./components/Profile.tsx";
 import Projects from "./components/Projects.tsx";
 import Socials from "./components/Socials.tsx";
 import useTheme from "./hooks/theme.tsx";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 function App() {
   const { themecls } = useTheme();
@@ -17,6 +18,7 @@ function App() {
       <Timeline />
       <Projects />
       <Socials />
+      <ScrollToTop />
     </div>
   );
 }

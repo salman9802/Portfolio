@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const Socials = (props: Props) => {
+const Socials = () => {
   return <div>Socials</div>;
 };
 
