@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { HiMiniChevronUpDown } from "react-icons/hi2";
 
 import useTheme from "../hooks/theme";
-import { THEME_ICONS, ThemeType } from "../constants/theme";
+import { saveTheme, THEME_ICONS, ThemeType } from "../constants/theme";
 
 const ThemeSelectButton = () => {
   const [menu, setMenu] = useState(false);
@@ -31,6 +31,7 @@ const ThemeSelectButton = () => {
   const { theme, setTheme } = useTheme();
 
   const handleThemeChange = (theme: ThemeType) => {
+    saveTheme(theme);
     setTheme(theme);
     setMenu(false);
   };

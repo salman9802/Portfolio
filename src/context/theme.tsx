@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { createContext } from "react";
 
-import { ThemeType } from "../constants/theme";
+import {
+  saveTheme,
+  THEME_STORAGE_KEY,
+  ThemeType,
+  validThemes,
+} from "../constants/theme";
 
 type ThemeClsType = "light" | "dark";
 
@@ -19,7 +24,15 @@ type Props = {
   children: React.ReactNode;
 };
 const ThemeProvider = (props: Props) => {
-  const [theme, setTheme] = useState<ThemeType>("system");
+  const [theme, setTheme] = useState<ThemeType>((): ThemeType => {
+    const storedTheme = localStorage.getItem(THEME_STORAGE_KEY) as ThemeType;
+    if (storedTheme !== null && validThemes.includes(storedTheme))
+      return storedTheme as ThemeType;
+    else {
+      saveTheme("system");
+      return "system";
+    }
+  });
   const [themecls, setThemecls] = useState<ThemeClsType>();
 
   // keep themecls in sync with theme
@@ -35,7 +48,13 @@ const ThemeProvider = (props: Props) => {
   useEffect(() => {
     const handleThemeChange = (e: any) => {
       if (theme === "system") {
-        e.matches ? setThemecls("dark") : setThemecls("light");
+        if (e.matches) {
+          setThemecls("dark");
+          saveTheme("dark");
+        } else {
+          setThemecls("light");
+          saveTheme("light");
+        }
       }
     };
 
