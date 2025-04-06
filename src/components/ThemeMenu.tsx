@@ -47,7 +47,7 @@ const ThemeSelectButton = () => {
       </button>
       <div
         ref={dropdownRef}
-        className={`border-theme-text/10 absolute top-full z-50 mt-4 w-full flex-col gap-2 border p-2 ${menu ? "flex" : "hidden"}`}
+        className={`border-theme-text/10 bg-theme-base absolute top-full z-50 mt-4 w-full flex-col gap-2 border p-2 ${menu ? "flex" : "hidden"}`}
       >
         {Object.keys(THEME_ICONS).map((t, i) => (
           <button

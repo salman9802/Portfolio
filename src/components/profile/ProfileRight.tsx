@@ -8,16 +8,21 @@ const ProfileRight = () => {
   const [copied, setCopied] = useState<boolean | null>(false);
 
   const handleCopy = () => {
-    navigator.clipboard
-      .writeText(PROFILE.EMAIL)
-      .then(() => {
-        setCopied(true);
-        setTimeout(() => setCopied(false), 3000);
-      })
-      .catch(() => {
-        setCopied(null);
-        setTimeout(() => setCopied(false), 3000);
-      });
+    try {
+      navigator.clipboard
+        .writeText(PROFILE.EMAIL)
+        .then(() => {
+          setCopied(true);
+          setTimeout(() => setCopied(false), 3000);
+        })
+        .catch(() => {
+          setCopied(null);
+          setTimeout(() => setCopied(false), 3000);
+        });
+    } catch (error) {
+      setCopied(null);
+      setTimeout(() => setCopied(false), 3000);
+    }
   };
 
   return (

@@ -12,5 +12,36 @@ export const PROFILE = {
     "From front-end interfaces that engage users to robust back-end systems that handle data efficiently, I combine creativity with technical expertise to deliver full-stack applications that are both functional and intuitive. I take pride in problem-solving and optimizing performance, ensuring that every project not only meets but exceeds expectations.",
   ],
   PIC: "/L1.svg",
-  EMAIL: "example@example.com",
+  EMAIL: "sallu123xx@gmail.com",
+  TIMELINE: {
+    EXPERIENCE: [
+      {
+        place: "PeakProSys",
+        role: "MERN Stack developer",
+        duration: "Dec 2024 - Mar 2025",
+      },
+    ],
+    EDUCATION: [
+      {
+        place: "Poona College",
+        type: "MSc (Computer Science)",
+        duration: "2023 - Current",
+      },
+      {
+        place: "Abeda Inamdar Senior College",
+        type: "BSc (Computer Science)",
+        duration: "2020 - 2023",
+      },
+      {
+        place: "Rosary Junior College",
+        type: "HSC (PCMB)",
+        duration: "2018 - 2020",
+      },
+      {
+        place: "Rosary School",
+        type: "SSC",
+        duration: "2018",
+      },
+    ],
+  },
 };

@@ -1,4 +1,4 @@
-import Experience from "./components/Experience.tsx";
+import Timeline from "./components/Timeline.tsx";
 import Navbar from "./components/Navbar.tsx";
 import Profile from "./components/Profile.tsx";
 import Projects from "./components/Projects.tsx";
@@ -14,7 +14,7 @@ function App() {
     >
       <Navbar />
       <Profile />
-      <Experience />
+      <Timeline />
       <Projects />
       <Socials />
     </div>
