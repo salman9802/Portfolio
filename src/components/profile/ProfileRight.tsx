@@ -29,7 +29,7 @@ const ProfileRight = () => {
     <div className="flex flex-col items-center gap-2 md:gap-4 lg:w-1/2 lg:gap-6">
       <img
         className="h-64 w-64 rounded-full object-cover object-center lg:h-96 lg:w-96"
-        src="/L1.svg"
+        src={PROFILE.PIC}
         alt="Profile Image"
       />
       <button
