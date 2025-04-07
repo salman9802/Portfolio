@@ -13,35 +13,36 @@ export const PROFILE = {
   ],
   PIC: "/L1.svg",
   EMAIL: "sallu123xx@gmail.com",
-  TIMELINE: {
-    EXPERIENCE: [
-      {
-        place: "PeakProSys",
-        role: "MERN Stack developer",
-        duration: "Dec 2024 - Mar 2025",
-      },
-    ],
-    EDUCATION: [
-      {
-        place: "Poona College",
-        type: "MSc (Computer Science)",
-        duration: "2023 - Current",
-      },
-      {
-        place: "Abeda Inamdar Senior College",
-        type: "BSc (Computer Science)",
-        duration: "2020 - 2023",
-      },
-      {
-        place: "Rosary Junior College",
-        type: "HSC (PCMB)",
-        duration: "2018 - 2020",
-      },
-      {
-        place: "Rosary School",
-        type: "SSC",
-        duration: "2018",
-      },
-    ],
-  },
+};
+
+export const TIMELINE = {
+  EXPERIENCE: [
+    {
+      place: "PeakProSys",
+      role: "MERN Stack intern",
+      duration: "Dec 2024 - Mar 2025",
+    },
+  ],
+  EDUCATION: [
+    {
+      place: "Poona College",
+      type: "MSc (Computer Science)",
+      duration: "2023 - Current",
+    },
+    {
+      place: "Abeda Inamdar Senior College",
+      type: "BSc (Computer Science)",
+      duration: "2020 - 2023",
+    },
+    {
+      place: "Rosary Junior College",
+      type: "HSC (PCMB)",
+      duration: "2018 - 2020",
+    },
+    {
+      place: "Rosary School",
+      type: "SSC",
+      duration: "2018",
+    },
+  ],
 };

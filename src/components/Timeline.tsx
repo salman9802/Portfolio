@@ -1,4 +1,4 @@
-import { PROFILE } from "../constants/info";
+import { TIMELINE } from "../constants/info";
 
 const Experience = () => {
   return (
@@ -14,7 +14,7 @@ const Experience = () => {
             Experience
           </span>
           <div className="flex grow flex-col gap-2">
-            {PROFILE.TIMELINE.EXPERIENCE.map((exp, i) => (
+            {TIMELINE.EXPERIENCE.map((exp, i) => (
               <div
                 key={i}
                 className="border-l-accent bg-theme-text/5 flex grow items-center justify-between gap-2 border-l p-2 lg:p-4"
@@ -40,7 +40,7 @@ const Experience = () => {
             Education
           </span>
           <div className="flex grow flex-col gap-2">
-            {PROFILE.TIMELINE.EDUCATION.map((exp, i) => (
+            {TIMELINE.EDUCATION.map((exp, i) => (
               <div
                 key={i}
                 className="border-l-primary bg-theme-text/5 flex items-center justify-between gap-2 border-l p-2 lg:p-4"
