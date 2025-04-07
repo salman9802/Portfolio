@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div
-      className={`${themecls} font-ibm-plex-mono bg-theme-base text-theme-text min-h-screen w-screen px-4 md:px-8 lg:px-16`}
+      className={`${themecls} font-ibm-plex-mono bg-theme-base text-theme-text w-screen overflow-x-hidden px-4 md:px-8 lg:px-16`}
     >
       <Navbar />
       <Profile />

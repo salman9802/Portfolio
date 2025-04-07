@@ -1,3 +1,10 @@
+import {
+  FaDiscord,
+  FaGithub,
+  FaLinkedin,
+  FaTelegramPlane,
+} from "react-icons/fa";
+
 export const PROFILE = {
   NAME: "Salman",
   PROFESSIONS: [
@@ -46,3 +53,26 @@ export const TIMELINE = {
     },
   ],
 };
+
+export const SOCIAL = [
+  {
+    name: "Discord",
+    url: "#",
+    icon: <FaDiscord className="size-5" />,
+  },
+  {
+    name: "Github",
+    url: "#",
+    icon: <FaGithub className="size-5" />,
+  },
+  {
+    name: "LinkedIn",
+    url: "#",
+    icon: <FaLinkedin className="size-5" />,
+  },
+  {
+    name: "Telegram",
+    url: "#",
+    icon: <FaTelegramPlane className="size-5" />,
+  },
+];
