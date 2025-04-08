@@ -3,7 +3,7 @@ import { SOCIAL } from "../constants/info";
 
 const Socials = () => {
   return (
-    <div className="mx-auto my-8 flex w-11/12 flex-col gap-8 xl:w-1/2">
+    <div className="my-8 flex flex-col gap-8">
       <h1 className="text-primary h1">Socials</h1>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:flex lg:flex-wrap">
         {/* socials */}

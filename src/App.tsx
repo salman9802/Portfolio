@@ -13,12 +13,14 @@ function App() {
     <div
       className={`${themecls} font-ibm-plex-mono bg-theme-base text-theme-text w-screen overflow-x-hidden px-4 md:px-8 lg:px-16`}
     >
-      <Navbar />
-      <Profile />
-      <Timeline />
-      <Projects />
-      <Socials />
-      <ScrollToTop />
+      <div className="mx-auto w-11/12 xl:w-3/4">
+        <Navbar />
+        <Profile />
+        <Timeline />
+        <Projects />
+        <Socials />
+        <ScrollToTop />
+      </div>
     </div>
   );
 }

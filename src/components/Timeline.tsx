@@ -2,7 +2,7 @@ import { TIMELINE } from "../constants/info";
 
 const Experience = () => {
   return (
-    <div className="mx-auto my-8 flex w-11/12 flex-col gap-8 xl:w-1/2">
+    <div className="mx-auto my-8 flex w-3/4 flex-col gap-8">
       <h1 className="h1">
         <span className="text-primary">Education</span> +{" "}
         <span className="text-accent">Experience</span>
