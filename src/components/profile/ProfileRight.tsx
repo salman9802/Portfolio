@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaRegCopy } from "react-icons/fa";
 import { IoMdCheckmark } from "react-icons/io";
+import { motion } from "motion/react";
 
 import { PROFILE } from "../../constants/info";
 
@@ -26,7 +27,24 @@ const ProfileRight = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-2 md:gap-4 lg:w-1/2 lg:gap-6">
+    <motion.div
+      initial={{
+        x: "20%",
+        opacity: 0,
+      }}
+      whileInView={{
+        x: "0%",
+        opacity: 1,
+        transition: {
+          duration: 1,
+        },
+      }}
+      viewport={{
+        once: true,
+        amount: 0.5,
+      }}
+      className="flex flex-col items-center gap-2 md:gap-4 lg:w-1/2 lg:gap-6"
+    >
       <img
         className="h-64 w-64 rounded-full object-cover object-center lg:h-96 lg:w-96"
         src={PROFILE.PIC}
@@ -55,7 +73,7 @@ const ProfileRight = () => {
           <FaRegCopy className="text-theme-text/40" />
         )}
       </button>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,8 +1,27 @@
 import { PROFILE, SOCIAL } from "../../constants/info";
 
+import { motion } from "motion/react";
+
 const Info = () => {
   return (
-    <div className="flex flex-col gap-1 text-center md:gap-2 lg:w-1/2 lg:gap-4 lg:text-left">
+    <motion.div
+      initial={{
+        x: "-20%",
+        opacity: 0,
+      }}
+      whileInView={{
+        x: "0%",
+        opacity: 1,
+        transition: {
+          duration: 1,
+        },
+      }}
+      viewport={{
+        once: true,
+        amount: 0.5,
+      }}
+      className="flex h-fit flex-col gap-1 text-center md:gap-2 lg:w-1/2 lg:gap-4 lg:text-left"
+    >
       <h1 className="h1">
         Hello, I'm <span className="text-primary">{PROFILE.NAME}</span>
       </h1>
@@ -30,7 +49,7 @@ const Info = () => {
           {SOCIAL.filter((s) => s.name === "Github")[0].icon}
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

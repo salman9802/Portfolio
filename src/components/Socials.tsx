@@ -1,9 +1,27 @@
 import { FaArrowRight } from "react-icons/fa";
 import { SOCIAL } from "../constants/info";
+import { motion } from "motion/react";
 
 const Socials = () => {
   return (
-    <div className="my-8 flex flex-col gap-8">
+    <motion.div
+      initial={{
+        y: "20%",
+        opacity: 0,
+      }}
+      whileInView={{
+        y: "0%",
+        opacity: 1,
+        transition: {
+          duration: 1,
+        },
+      }}
+      viewport={{
+        once: true,
+        amount: 0.5,
+      }}
+      className="my-8 flex flex-col gap-8"
+    >
       <h1 className="text-primary h1">Socials</h1>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:flex lg:flex-wrap">
         {/* socials */}
@@ -21,7 +39,7 @@ const Socials = () => {
           </a>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

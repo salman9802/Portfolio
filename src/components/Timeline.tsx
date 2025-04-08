@@ -1,8 +1,26 @@
 import { TIMELINE } from "../constants/info";
+import { motion } from "motion/react";
 
 const Experience = () => {
   return (
-    <div className="flex min-h-screen flex-col gap-8">
+    <motion.div
+      initial={{
+        y: "20%",
+        opacity: 0,
+      }}
+      whileInView={{
+        y: "0%",
+        opacity: 1,
+        transition: {
+          duration: 1,
+        },
+      }}
+      viewport={{
+        once: true,
+        amount: 0.5,
+      }}
+      className="mt-20 flex min-h-screen flex-col gap-8 sm:mt-0"
+    >
       <h1 className="h1">
         <span className="text-primary">Education</span> +{" "}
         <span className="text-accent">Experience</span>
@@ -61,7 +79,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
