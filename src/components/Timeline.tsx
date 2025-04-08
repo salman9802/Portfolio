@@ -2,12 +2,12 @@ import { TIMELINE } from "../constants/info";
 
 const Experience = () => {
   return (
-    <div className="mx-auto my-8 flex w-3/4 flex-col gap-8">
+    <div className="flex min-h-screen flex-col gap-8">
       <h1 className="h1">
         <span className="text-primary">Education</span> +{" "}
         <span className="text-accent">Experience</span>
       </h1>
-      <div className="flex flex-col gap-4">
+      <div className="mx-auto my-8 flex flex-col gap-4 md:w-3/4">
         {/* Experience */}
         <div className="border-l-accent bg-theme-text/5 flex flex-col gap-4 border-l-2 p-4 sm:flex-row lg:gap-8 lg:p-6">
           <span className="text-accent text-lg md:text-xl lg:text-2xl">

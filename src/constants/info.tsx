@@ -27,7 +27,7 @@ export const TIMELINE = {
   EXPERIENCE: [
     {
       place: "PeakProSys",
-      role: "MERN Stack intern",
+      role: "MERN Stack Intern",
       duration: "Dec 2024 - Mar 2025",
     },
   ],
