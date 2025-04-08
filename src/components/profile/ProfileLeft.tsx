@@ -16,7 +16,7 @@ const Info = () => {
           </p>
         ))}
       </div>
-      <div className="mt-4 flex items-center justify-center gap-4 lg:self-start">
+      <div className="mt-4 flex flex-col items-center justify-center gap-4 sm:flex-row lg:self-start">
         <button className="bg-primary hover:outline-primary cursor-pointer rounded-sm px-3 py-1.5 hover:bg-transparent hover:outline md:px-5 md:py-2.5">
           Download Resume
         </button>
@@ -24,9 +24,10 @@ const Info = () => {
           href={SOCIAL.filter((s) => s.name === "Github")[0].url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-accent border-accent hover:bg-accent hover:text-theme-text rounded-sm border px-3 py-1.5 md:px-5 md:py-2.5"
+          className="text-accent border-accent hover:bg-accent hover:text-theme-text flex items-center justify-center gap-2 rounded-sm border px-3 py-1.5 md:px-5 md:py-2.5"
         >
-          View Github
+          <span>View Github</span>
+          {SOCIAL.filter((s) => s.name === "Github")[0].icon}
         </a>
       </div>
     </div>

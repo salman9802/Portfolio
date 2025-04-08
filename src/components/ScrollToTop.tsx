@@ -29,7 +29,7 @@ const ScrollToTop = () => {
         });
       }}
       ref={btnRef}
-      className="bg-theme-text text-theme-base pointer-events-none fixed right-5 bottom-5 cursor-pointer rounded-full p-4 opacity-0 transition-opacity duration-200"
+      className="bg-theme-text text-theme-base hover:bg-theme-text/80 pointer-events-none fixed right-5 bottom-5 cursor-pointer rounded-full p-4 opacity-0 transition-all duration-200"
     >
       <FaChevronUp />
     </button>
