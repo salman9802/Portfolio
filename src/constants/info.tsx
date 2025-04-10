@@ -20,7 +20,7 @@ export const PROFILE = {
     "From front-end interfaces that engage users to robust back-end systems that handle data efficiently, I combine creativity with technical expertise to deliver full-stack applications that are both functional and intuitive. I take pride in problem-solving and optimizing performance, ensuring that every project not only meets but exceeds expectations.",
   ],
   PIC: "L1-rounded.svg",
-  EMAIL: "sallu123xx@gmail.com",
+  EMAIL: "khansalmanayaz@gmail.com",
 };
 
 export const TIMELINE = {
