@@ -82,3 +82,5 @@ export const SOCIAL = [
     icon: <FaTelegramPlane className="size-5 text-[#0088CC]" />,
   },
 ];
+
+export const YEAR = "2025";
