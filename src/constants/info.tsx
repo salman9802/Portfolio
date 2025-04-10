@@ -73,7 +73,7 @@ export const SOCIAL = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/username",
+    url: "https://www.linkedin.com/in/salman9802",
     icon: <FaLinkedin className="size-5 text-[#0A66C2]" />,
   },
   {

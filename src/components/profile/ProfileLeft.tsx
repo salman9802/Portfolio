@@ -36,9 +36,14 @@ const Info = () => {
         ))}
       </div>
       <div className="mt-4 flex flex-col items-center justify-center gap-4 sm:flex-row lg:self-start">
-        <button className="bg-primary hover:outline-primary cursor-pointer rounded-sm px-3 py-1.5 hover:bg-transparent hover:outline md:px-5 md:py-2.5">
+        <a
+          href="SalmanKhanResume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-primary hover:outline-primary cursor-pointer rounded-sm px-3 py-1.5 hover:bg-transparent hover:outline md:px-5 md:py-2.5"
+        >
           Download Resume
-        </button>
+        </a>
         <a
           href={SOCIAL.filter((s) => s.name === "Github")[0].url}
           target="_blank"
