@@ -7,6 +7,15 @@ import {
   FaTelegramPlane,
 } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
+import ExpressIcon from "../components/icons/ExpressIcon";
+import ReactIcon from "../components/icons/ReactIcon";
+import NodejsIcon from "../components/icons/NodejsIcon";
+import PrismaIcon from "../components/icons/PrismaIcon";
+import SocketioIcon from "../components/icons/SocketioIcon";
+import TypescriptIcon from "../components/icons/TypescriptIcon";
+import TailwindcssIcon from "../components/icons/TailwindcssIcon";
+import ReduxtoolkitIcon from "../components/icons/ReduxtoolkitIcon";
+import ZodIcon from "../components/icons/ZodIcon";
 
 export const PROFILE = {
   NAME: "Salman",
@@ -87,21 +96,124 @@ export const SOCIAL = [
 
 export const YEAR = "2025";
 
+// Icons from: https://devicon.dev/
+
 export const PROJECTS: {
   name: string;
-  description: string[];
-  technologies: React.ReactNode;
-  githubLink: string;
-  demoLink: string;
+  image: string;
+  description: React.ReactNode[];
+  technologies: React.ReactNode[];
+  githubLink?: string;
+  demoLink?: string;
 }[] = [
   {
-    name: "Some project name",
+    name: "Skillswap - Trade skills, Build future",
+    image: "skillswap-preview-squared.png",
     description: [
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum excepturi dolores quae minima. Nihil, iste? Quam, obcaecati numquam ad eos iure ab nostrum atque impedit.",
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum excepturi dolores quae minima. Nihil, iste? Quam, obcaecati numquam ad eos iure ab nostrum atque impedit.",
+      <span>
+        A platform where users can offer skills they know (like guitar, coding,
+        painting, yoga) and learn skills from others in exchange — no money
+        involved, just time.
+      </span>,
+      <span>
+        <b>Features:</b> Typescript (type safety), Filter and search by skills
+        and availability, Booking system with calendar integration, Chat system
+        (socket.io), Rating system, Dynamic user profiles and secure
+        authentication with JWT (access and refresh tokens) etc.
+      </span>,
     ],
-    technologies: [<div>Tech #1</div>, <div>Tech #2</div>, <div>Tech #3</div>],
+    technologies: [
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <ExpressIcon className="size-5" />
+        express
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        {/* <img
+          src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+          className="size-5"
+        /> */}
+        <ReactIcon className="size-5" />
+        React
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        {/* <img
+          src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"
+          className="size-5"
+        /> */}
+        <NodejsIcon className="size-5" />
+        Node.js
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        {/* <img
+          src="https://avatars.githubusercontent.com/u/17219288?s=40&v=4"
+          className="size-5"
+        /> */}
+        <PrismaIcon className="size-5 invert-70" />
+        Prisma
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        {/* <img src="https://socket.io/images/logo.svg" className="size-5" /> */}
+        <SocketioIcon className="size-5" />
+        Socket.IO
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        {/* <img
+          src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
+          className="size-5"
+          /> */}
+        <TypescriptIcon className="size-5" />
+        Typescript
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        {/* <img
+          src="https://avatars.githubusercontent.com/u/67109815"
+          className="size-5"
+        /> */}
+        <TailwindcssIcon className="size-5" />
+        Tailwind CSS
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        {/* <img
+          src="https://avatars.githubusercontent.com/u/13142323"
+          className="size-5"
+        /> */}
+        <ReduxtoolkitIcon className="size-5" />
+        Redux + Redux Toolkit
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <ZodIcon className="size-5" />
+        Zod
+      </div>,
+
+      // <div className="rounded-sm bg-blue-100 px-3 py-1.5 font-semibold text-blue-700">
+      //   Express
+      // </div>,
+      // <div className="rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold text-white">
+      //   Tech #2
+      // </div>,
+    ],
     githubLink: "",
     demoLink: "",
   },
+  // {
+  //   name: "Some project name",
+  //   image:
+  //     "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   description: [
+  //     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum excepturi dolores quae minima. Nihil, iste? Quam, obcaecati numquam ad eos iure ab nostrum atque impedit.",
+  //   ],
+  //   technologies: [
+  //     <div className="rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold text-white">
+  //       Tech #1
+  //     </div>,
+  //     <div className="rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold text-white">
+  //       Tech #2
+  //     </div>,
+  //     <div className="rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold text-white">
+  //       Tech #3
+  //     </div>,
+  //   ],
+  //   githubLink: "",
+  //   demoLink: "",
+  // },
 ];
