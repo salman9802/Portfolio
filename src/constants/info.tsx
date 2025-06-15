@@ -1,3 +1,5 @@
+import React from "react";
+
 import {
   FaDiscord,
   FaGithub,
@@ -84,3 +86,22 @@ export const SOCIAL = [
 ];
 
 export const YEAR = "2025";
+
+export const PROJECTS: {
+  name: string;
+  description: string[];
+  technologies: React.ReactNode;
+  githubLink: string;
+  demoLink: string;
+}[] = [
+  {
+    name: "Some project name",
+    description: [
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum excepturi dolores quae minima. Nihil, iste? Quam, obcaecati numquam ad eos iure ab nostrum atque impedit.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum excepturi dolores quae minima. Nihil, iste? Quam, obcaecati numquam ad eos iure ab nostrum atque impedit.",
+    ],
+    technologies: [<div>Tech #1</div>, <div>Tech #2</div>, <div>Tech #3</div>],
+    githubLink: "",
+    demoLink: "",
+  },
+];

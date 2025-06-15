@@ -35,8 +35,8 @@ const Info = () => {
       </Reveal>
       <div className="flex flex-col gap-1">
         {PROFILE.DESCRIPTION.map((prof, i) => (
-          <Reveal>
-            <p key={i} className="mt-1 text-sm md:mt-1.5 lg:mt-4 lg:text-base">
+          <Reveal key={i}>
+            <p className="mt-1 text-sm md:mt-1.5 lg:mt-4 lg:text-base">
               {prof}
             </p>
           </Reveal>

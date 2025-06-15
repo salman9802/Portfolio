@@ -25,11 +25,15 @@ const Reveal: React.FC<
     <div
       className={className}
       ref={ref}
-      style={{ position: "relative", width, overflow: "hidden" }}
+      style={{
+        position: "relative",
+        width,
+        overflow: "hidden",
+      }}
     >
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 75 },
+          hidden: { opacity: 0, y: 100 },
           visible: { opacity: 100, y: 0 },
         }}
         initial="hidden"
@@ -48,10 +52,11 @@ const Reveal: React.FC<
         transition={{ duration: 0.5, ease: "easeIn" }}
         style={{
           position: "absolute",
-          top: 4,
-          bottom: 4,
-          left: 0,
-          right: 0,
+          // top: 4,
+          // bottom: 4,
+          // left: 0,
+          // right: 0,
+          inset: 0,
           background: `var(--color-${color})`,
           zIndex: 20,
         }}

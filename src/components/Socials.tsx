@@ -29,9 +29,8 @@ const Socials = () => {
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:flex lg:flex-wrap">
         {/* socials */}
         {SOCIAL.map((social, i) => (
-          <Reveal>
+          <Reveal key={i}>
             <a
-              key={i}
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
