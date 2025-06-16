@@ -16,6 +16,9 @@ import TypescriptIcon from "../components/icons/TypescriptIcon";
 import TailwindcssIcon from "../components/icons/TailwindcssIcon";
 import ReduxtoolkitIcon from "../components/icons/ReduxtoolkitIcon";
 import ZodIcon from "../components/icons/ZodIcon";
+import MongodbIcon from "../components/icons/MongodbIcon";
+import MongooseIcon from "../components/icons/MongooseIcon";
+import HtmlIcon from "../components/icons/HtmlIcon";
 
 export const PROFILE = {
   NAME: "Salman",
@@ -193,6 +196,58 @@ export const PROJECTS: {
       // </div>,
     ],
     githubLink: "",
+    demoLink: "",
+  },
+  {
+    name: "Electronics web store",
+    image: "electronics-web-store-preview.png",
+    description: [
+      <span>
+        Developed a fully functional e-commerce website focused on selling
+        consumer electronics. The project was designed to provide a seamless
+        shopping experience with features like dynamic product listings, secure
+        checkout, and mobile responsiveness.
+      </span>,
+      <span>
+        <b>Features:</b> Dynamic listing of products with categories, filters
+        and product detail pages. Registration, login/logout, profile
+        management, and order history tracking. Mobile-friendly UI/UX for all
+        screen sizes.
+      </span>,
+    ],
+    technologies: [
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <NodejsIcon className="size-5" />
+        Node.js
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <ExpressIcon className="size-5" />
+        Express
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <MongodbIcon className="size-5" />
+        MongoDB
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <MongooseIcon className="size-5" />
+        Mongoose
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <TailwindcssIcon className="size-5" />
+        Tailwind CSS
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <HtmlIcon className="size-5" />
+        HTML
+      </div>,
+      <div className="rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold text-white">
+        &lt;%= <span className="text-xl">EJS</span> %&gt;
+      </div>,
+      // <div className="rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold text-white">
+      //   Tech #3
+      // </div>,
+    ],
+    githubLink: "https://github.com/salman9802/Electronics-Web-Store",
     demoLink: "",
   },
   // {

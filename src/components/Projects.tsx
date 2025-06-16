@@ -1,6 +1,6 @@
 import Reveal from "./utils/Reveal";
 
-import { PROJECTS } from "../constants/info";
+import { PROJECTS, SOCIAL } from "../constants/info";
 
 const Projects = () => {
   return (
@@ -53,14 +53,15 @@ const Projects = () => {
                 {/* <div className="bg-black/40 px-3 py-1.5">React</div> */}
               </div>
               {/* Action buttons */}
-              <div className="flex items-center justify-between px-3">
+              <div className="flex items-center gap-6 px-3">
                 {project.githubLink && (
                   <a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-primary cursor-pointer rounded-sm px-3 py-1.5"
+                    className="border-primary flex cursor-pointer items-center gap-3 rounded-sm border px-3 py-1.5"
                   >
+                    {SOCIAL[2].icon}
                     Github
                   </a>
                 )}
@@ -69,7 +70,7 @@ const Projects = () => {
                     href={project.demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border-primary cursor-pointer rounded-sm border px-3 py-1.5"
+                    className="bg-primary cursor-pointer rounded-sm px-3 py-1.5"
                   >
                     Demo
                   </a>
