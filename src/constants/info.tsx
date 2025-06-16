@@ -199,7 +199,7 @@ export const PROJECTS: {
       //   Tech #2
       // </div>,
     ],
-    githubLink: "",
+    githubLink: "https://github.com/salman9802/SkillSwap",
     demoLink: "",
   },
   {
