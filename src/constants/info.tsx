@@ -19,6 +19,10 @@ import ZodIcon from "../components/icons/ZodIcon";
 import MongodbIcon from "../components/icons/MongodbIcon";
 import MongooseIcon from "../components/icons/MongooseIcon";
 import HtmlIcon from "../components/icons/HtmlIcon";
+import PhpIcon from "../components/icons/PhpIcon";
+import CssIcon from "../components/icons/CssIcon";
+import JavascriptIcon from "../components/icons/JavascriptIcon";
+import MysqlIcon from "../components/icons/MysqlIcon";
 
 export const PROFILE = {
   NAME: "Salman",
@@ -248,6 +252,53 @@ export const PROJECTS: {
       // </div>,
     ],
     githubLink: "https://github.com/salman9802/Electronics-Web-Store",
+    demoLink: "",
+  },
+  {
+    name: "Automotive parts distributor",
+    image: "automotive-parts-distributor-preview.png",
+    description: [
+      <span>
+        Designed and developed a web-based platform for an automotive parts
+        distributor, enabling efficient online catalog browsing, inventory
+        management, and B2C ordering. The system supports both retail and
+        wholesale operations.
+      </span>,
+      <span>
+        <b>Features:</b> Categorized listings with detailed specs, compatibility
+        filters (make, model, year). Roles for retailers, wholesalers, and
+        admins with customized access and dashboards. Live order status,
+        downloadable invoices, and order history.
+      </span>,
+    ],
+    technologies: [
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <PhpIcon className="size-5" />
+        PHP
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <CssIcon className="size-5" />
+        CSS
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <JavascriptIcon className="size-5" />
+        JS
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <MysqlIcon className="size-5" />
+        MySQL
+      </div>,
+      // <div className="rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold text-white">
+      //   Tech #1
+      // </div>,
+      // <div className="rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold text-white">
+      //   Tech #2
+      // </div>,
+      // <div className="rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold text-white">
+      //   Tech #3
+      // </div>,
+    ],
+    githubLink: "",
     demoLink: "",
   },
   // {

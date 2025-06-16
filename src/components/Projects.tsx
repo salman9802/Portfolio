@@ -19,7 +19,7 @@ const Projects = () => {
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
-            className="flex min-h-[500px] w-full flex-col items-start justify-end overflow-hidden rounded-lg bg-transparent transition-transform duration-200 ease-in-out hover:scale-105"
+            className="flex min-h-[1000px] w-full flex-col items-start justify-end overflow-hidden rounded-lg bg-transparent transition-transform duration-200 ease-in-out hover:scale-105"
           >
             {/* sm:w-[calc(50%-var(--gap))] */}
             {/* Content */}
@@ -38,7 +38,7 @@ const Projects = () => {
                 <Reveal>{project.name}</Reveal>
               </h3>
               {/* Description */}
-              <div className="5 flex flex-col gap-1">
+              <div className="5 flex flex-col gap-3">
                 {project.description.map((desc, i) => (
                   <Reveal key={i}>
                     <p>{desc}</p>
