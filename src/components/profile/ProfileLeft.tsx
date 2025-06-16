@@ -2,8 +2,11 @@ import { PROFILE, SOCIAL } from "../../constants/info";
 
 import { motion } from "motion/react";
 import Reveal from "../utils/Reveal";
+import useTheme from "../../hooks/theme";
 
 const Info = () => {
+  const { themecls } = useTheme();
+
   return (
     <motion.div
       // initial={{
@@ -47,7 +50,7 @@ const Info = () => {
           href="SalmanKhanResume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-primary hover:outline-primary cursor-pointer rounded-sm px-3 py-1.5 text-white hover:bg-transparent hover:outline md:px-5 md:py-2.5"
+          className={`bg-primary hover:outline-primary cursor-pointer rounded-sm px-3 py-1.5 hover:bg-transparent hover:outline md:px-5 md:py-2.5 ${themecls === "light" ? "text-black" : "text-white"}`}
         >
           <Reveal>Download Resume</Reveal>
         </a>

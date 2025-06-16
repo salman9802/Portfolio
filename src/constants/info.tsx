@@ -53,7 +53,7 @@ export const TIMELINE = {
     {
       place: "Poona College",
       type: "MSc (Computer Science)",
-      duration: "2023 - Current",
+      duration: "2023 - 2025",
     },
     {
       place: "Abeda Inamdar Senior College",
