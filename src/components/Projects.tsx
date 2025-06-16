@@ -10,7 +10,7 @@ const Projects = () => {
           <span className="text-primary leading-normal">Projects</span>
         </Reveal>
       </h1>
-      <div className="flex flex-wrap items-center justify-center gap-[var(--gap)] [--gap:1.5rem]">
+      <div className="flex flex-wrap items-center justify-center gap-12">
         {PROJECTS.map((project, i) => (
           <div
             key={i}

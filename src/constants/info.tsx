@@ -288,17 +288,8 @@ export const PROJECTS: {
         <MysqlIcon className="size-5" />
         MySQL
       </div>,
-      // <div className="rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold text-white">
-      //   Tech #1
-      // </div>,
-      // <div className="rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold text-white">
-      //   Tech #2
-      // </div>,
-      // <div className="rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold text-white">
-      //   Tech #3
-      // </div>,
     ],
-    githubLink: "",
+    githubLink: "https://github.com/salman9802/AutomotivePartsDistributor",
     demoLink: "",
   },
   // {
