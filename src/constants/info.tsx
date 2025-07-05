@@ -115,7 +115,7 @@ export const PROJECTS: {
 }[] = [
   {
     name: "Skillswap - Trade skills, Build future",
-    image: "skillswap-preview-squared.png",
+    image: "skillswap-preview.png",
     description: [
       <span>
         A platform where users can offer skills they know (like guitar, coding,
@@ -200,7 +200,7 @@ export const PROJECTS: {
       // </div>,
     ],
     githubLink: "https://github.com/salman9802/SkillSwap",
-    demoLink: "",
+    demoLink: "https://skillswap-xj94.onrender.com",
   },
   {
     name: "Electronics web store",
