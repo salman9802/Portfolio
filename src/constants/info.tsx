@@ -200,7 +200,7 @@ export const PROJECTS: {
       // </div>,
     ],
     githubLink: "https://github.com/salman9802/SkillSwap",
-    demoLink: "https://skillswap-xj94.onrender.com",
+    demoLink: "https://skillswap-1-r1h9.onrender.com/",
   },
   {
     name: "Electronics web store",
