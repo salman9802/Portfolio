@@ -81,7 +81,7 @@ export const SOCIAL = [
   },
   {
     name: "Discord",
-    url: "https://discord.com/users/deathcome_",
+    url: "https://discord.gg/qU9sSRBG6h",
     icon: <FaDiscord className="size-5 text-[#7289DA]" />,
   },
   {
