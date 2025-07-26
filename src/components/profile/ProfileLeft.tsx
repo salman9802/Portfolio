@@ -33,7 +33,7 @@ const Info = () => {
       </Reveal>
       <Reveal>
         <h2 className="custom-gradient mx-auto w-fit text-xl md:text-2xl lg:mx-0 lg:text-3xl">
-          {PROFILE.PROFESSIONS[0]}
+          {PROFILE.QUALITIES[0]}
         </h2>
       </Reveal>
       <div className="flex flex-col gap-1">

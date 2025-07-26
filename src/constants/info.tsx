@@ -26,7 +26,7 @@ import MysqlIcon from "../components/icons/MysqlIcon";
 
 export const PROFILE = {
   NAME: "Salman",
-  PROFESSIONS: [
+  QUALITIES: [
     "a Software Developer",
     "a Tech geek",
     "a Gamer",
