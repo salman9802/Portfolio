@@ -1,3 +1,5 @@
+import React from "react";
+
 import Timeline from "./components/Timeline.tsx";
 import Navbar from "./components/Navbar.tsx";
 import Profile from "./components/Profile.tsx";
@@ -7,8 +9,19 @@ import useTheme from "./hooks/theme.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 import Footer from "./components/Footer.tsx";
 
+const lightThemeCursor = "url('black-cursor.svg') 1 1, auto";
+const darkThemeCursor = "url('white-cursor.svg') 1 1, auto";
+
 function App() {
   const { themecls } = useTheme();
+
+  React.useEffect(() => {
+    if (themecls == "light") {
+      document.body.style.cursor = lightThemeCursor;
+    } else {
+      document.body.style.cursor = darkThemeCursor;
+    }
+  }, [themecls]);
 
   return (
     <div

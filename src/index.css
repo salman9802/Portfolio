@@ -53,6 +53,10 @@
   /* transition when theme changes */
   * {
     @apply transition-colors duration-150;
+
+    /* cursor:
+      url("cursor.png") 1 1,
+      auto; */
   }
 
   /* For light mode */
