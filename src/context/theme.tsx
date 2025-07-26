@@ -8,7 +8,7 @@ import {
   validThemes,
 } from "../constants/theme";
 
-type ThemeClsType = "light" | "dark";
+export type ThemeClsType = "light" | "dark";
 
 type ThemeContextType = {
   theme: ThemeType;

@@ -8,6 +8,7 @@ import Socials from "./components/Socials.tsx";
 import useTheme from "./hooks/theme.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 import Footer from "./components/Footer.tsx";
+import TwinklingStarsBg from "./components/TwinklingStarsBg.tsx";
 
 const lightThemeCursor = "url('black-cursor.svg') 1 1, auto";
 const darkThemeCursor = "url('white-cursor.svg') 1 1, auto";
@@ -25,9 +26,10 @@ function App() {
 
   return (
     <div
-      className={`${themecls} font-ibm-plex-mono bg-theme-base text-theme-text w-screen overflow-x-hidden px-4 md:px-8 lg:px-16`}
+      className={`${themecls} font-ibm-plex-mono bg-theme-base text-theme-text relative z-0 w-screen overflow-x-hidden px-4 md:px-8 lg:px-16`}
     >
-      <div className="mx-auto w-11/12 xl:w-3/4">
+      <TwinklingStarsBg theme={themecls} />
+      <div className="relative -z-30 mx-auto w-11/12 xl:w-3/4">
         <Navbar />
         <Profile />
         <Timeline />
