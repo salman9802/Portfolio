@@ -10,6 +10,7 @@ import ScrollToTop from "./components/ScrollToTop.tsx";
 import Footer from "./components/Footer.tsx";
 import TwinklingStarsBg from "./components/TwinklingStarsBg.tsx";
 import Hero from "./components/Hero.tsx";
+import AboutMe from "./components/AboutMe.tsx";
 
 const lightThemeCursor = "url('black-cursor.svg') 1 1, auto";
 const darkThemeCursor = "url('white-cursor.svg') 1 1, auto";
@@ -34,6 +35,7 @@ function App() {
         <Navbar />
         {/* <Profile /> */}
         <Hero />
+        <AboutMe />
         <Timeline />
         <Projects />
         <Socials />
