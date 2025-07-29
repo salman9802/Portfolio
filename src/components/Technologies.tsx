@@ -1,4 +1,3 @@
-import React from "react";
 import { TECHNOLOGIES } from "../constants/info";
 import Reveal from "./utils/Reveal";
 

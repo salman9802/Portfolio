@@ -3,9 +3,9 @@ import React from "react";
 import { motion } from "motion/react";
 import useTheme from "../hooks/theme";
 import Reveal from "./utils/Reveal";
-import { PROFILE, SOCIAL } from "../constants/info";
-import { IoMdCheckmark } from "react-icons/io";
-import { FaRegCopy } from "react-icons/fa";
+import { SOCIAL } from "../constants/info";
+// import { IoMdCheckmark } from "react-icons/io";
+// import { FaRegCopy } from "react-icons/fa";
 
 const HeroLeft: React.FC = () => {
   const { themecls } = useTheme();
@@ -59,60 +59,60 @@ const HeroLeft: React.FC = () => {
   );
 };
 
-const HeroRight: React.FC = () => {
-  const [copy, setCopy] = React.useState<"idle" | "copied" | "failed">("idle");
+// const HeroRight: React.FC = () => {
+//   const [copy, setCopy] = React.useState<"idle" | "copied" | "failed">("idle");
 
-  const handleCopy = () => {
-    try {
-      navigator.clipboard
-        .writeText(PROFILE.EMAIL)
-        .then(() => {
-          setCopy("copied");
-          setTimeout(() => setCopy("idle"), 3000);
-        })
-        .catch(() => {
-          setCopy("failed");
-          setTimeout(() => setCopy("idle"), 3000);
-        });
-    } catch (error) {
-      setCopy("failed");
-      setTimeout(() => setCopy("idle"), 3000);
-    }
-  };
+//   const handleCopy = () => {
+//     try {
+//       navigator.clipboard
+//         .writeText(PROFILE.EMAIL)
+//         .then(() => {
+//           setCopy("copied");
+//           setTimeout(() => setCopy("idle"), 3000);
+//         })
+//         .catch(() => {
+//           setCopy("failed");
+//           setTimeout(() => setCopy("idle"), 3000);
+//         });
+//     } catch (error) {
+//       setCopy("failed");
+//       setTimeout(() => setCopy("idle"), 3000);
+//     }
+//   };
 
-  return (
-    <motion.div className="flex flex-col items-center gap-2 md:gap-4 lg:w-1/2 lg:gap-6">
-      <img
-        className="h-64 w-64 rounded-full object-cover object-center lg:h-96 lg:w-96"
-        src={PROFILE.PIC}
-        alt="Profile Image"
-      />
-      <Reveal>
-        <button
-          onClick={handleCopy}
-          className="bg-theme-text/5 flex items-center justify-center gap-2 rounded-md px-3 py-1.5"
-        >
-          {copy === "failed" ? (
-            <span className="text-red-500">Couldn't copy email</span>
-          ) : copy === "copied" ? (
-            <span className="text-theme-text/70 text-sm">
-              Copied to clipboard
-            </span>
-          ) : (
-            <span className="text-theme-text text-xl font-medium">
-              {PROFILE.EMAIL}
-            </span>
-          )}
-          {copy === "copied" ? (
-            <IoMdCheckmark />
-          ) : (
-            <FaRegCopy className="text-theme-text/40" />
-          )}
-        </button>
-      </Reveal>
-    </motion.div>
-  );
-};
+//   return (
+//     <motion.div className="flex flex-col items-center gap-2 md:gap-4 lg:w-1/2 lg:gap-6">
+//       <img
+//         className="h-64 w-64 rounded-full object-cover object-center lg:h-96 lg:w-96"
+//         src={PROFILE.PIC}
+//         alt="Profile Image"
+//       />
+//       <Reveal>
+//         <button
+//           onClick={handleCopy}
+//           className="bg-theme-text/5 flex items-center justify-center gap-2 rounded-md px-3 py-1.5"
+//         >
+//           {copy === "failed" ? (
+//             <span className="text-red-500">Couldn't copy email</span>
+//           ) : copy === "copied" ? (
+//             <span className="text-theme-text/70 text-sm">
+//               Copied to clipboard
+//             </span>
+//           ) : (
+//             <span className="text-theme-text text-xl font-medium">
+//               {PROFILE.EMAIL}
+//             </span>
+//           )}
+//           {copy === "copied" ? (
+//             <IoMdCheckmark />
+//           ) : (
+//             <FaRegCopy className="text-theme-text/40" />
+//           )}
+//         </button>
+//       </Reveal>
+//     </motion.div>
+//   );
+// };
 
 const Hero = () => {
   return (
