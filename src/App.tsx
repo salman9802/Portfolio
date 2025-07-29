@@ -46,9 +46,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Timeline />
-
         <Technologies />
-
         <Projects />
         <Socials />
         <ScrollToTop />

@@ -33,6 +33,7 @@ const IconsPopout = () => {
         opacity: 0,
 
         duration: 1.8,
+        ease: "elastic.out(1, 0.8)", // softer spring
         scrollTrigger: {
           trigger: ele,
           start: "top 80%",
