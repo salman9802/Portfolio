@@ -49,7 +49,8 @@ const TwinklingStarsBg = ({ theme }: { theme: ThemeClsType | undefined }) => {
   // Function to generate random stars
   function generateStars(canvas: HTMLCanvasElement) {
     for (let i = 0; i < STAR_COUNT; i++) {
-      let radius = Math.random() * 1.5 + 0.5; // Star size between 0.5 and 2
+      // let radius = Math.random() * 1.5 + 0.5; // Star size between 0.5 and 2
+      let radius = Math.random() * 0.6 + 0.2; // Star size between 0.2 and 0.8
       //   let radius = 0.00005;
       let x = Math.random() * canvas.width;
       let y = Math.random() * canvas.height;

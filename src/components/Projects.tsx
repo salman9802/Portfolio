@@ -19,7 +19,7 @@ const Projects = () => {
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
-            className="flex min-h-[1000px] w-full flex-col items-start justify-end overflow-hidden rounded-lg bg-transparent transition-transform duration-200 ease-in-out hover:scale-105"
+            className="flex min-h-[500px] w-full flex-col items-start justify-end overflow-hidden rounded-lg bg-transparent transition-transform duration-200 ease-in-out md:w-2/3"
           >
             {/* sm:w-[calc(50%-var(--gap))] */}
             {/* Content */}
