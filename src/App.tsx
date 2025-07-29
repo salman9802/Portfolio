@@ -1,8 +1,11 @@
 import React from "react";
 
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import Timeline from "./components/Timeline.tsx";
 import Navbar from "./components/Navbar.tsx";
-import Profile from "./components/Profile.tsx";
 import Projects from "./components/Projects.tsx";
 import Socials from "./components/Socials.tsx";
 import useTheme from "./hooks/theme.tsx";
@@ -11,9 +14,12 @@ import Footer from "./components/Footer.tsx";
 import TwinklingStarsBg from "./components/TwinklingStarsBg.tsx";
 import Hero from "./components/Hero.tsx";
 import AboutMe from "./components/AboutMe.tsx";
+import IconsPopout from "./components/IconsPopout.tsx";
 
 const lightThemeCursor = "url('black-cursor.svg') 1 1, auto";
 const darkThemeCursor = "url('white-cursor.svg') 1 1, auto";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function App() {
   const { themecls } = useTheme();
@@ -34,6 +40,8 @@ function App() {
       <div className="relative -z-30 mx-auto w-11/12 xl:w-3/4">
         <Navbar />
         {/* <Profile /> */}
+        {/* <div className="min-h-screen"></div> */}
+        <IconsPopout />
         <Hero />
         <AboutMe />
         <Timeline />
