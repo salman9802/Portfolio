@@ -15,6 +15,7 @@ import TwinklingStarsBg from "./components/TwinklingStarsBg.tsx";
 import Hero from "./components/Hero.tsx";
 import AboutMe from "./components/AboutMe.tsx";
 import IconsPopout from "./components/IconsPopout.tsx";
+import Technologies from "./components/Technologies.tsx";
 
 const lightThemeCursor = "url('black-cursor.svg') 1 1, auto";
 const darkThemeCursor = "url('white-cursor.svg') 1 1, auto";
@@ -45,6 +46,9 @@ function App() {
         <Hero />
         <AboutMe />
         <Timeline />
+
+        <Technologies />
+
         <Projects />
         <Socials />
         <ScrollToTop />

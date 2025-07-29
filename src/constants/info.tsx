@@ -23,6 +23,11 @@ import PhpIcon from "../components/icons/PhpIcon";
 import CssIcon from "../components/icons/CssIcon";
 import JavascriptIcon from "../components/icons/JavascriptIcon";
 import MysqlIcon from "../components/icons/MysqlIcon";
+import PythonIcon from "../components/icons/PythonIcon";
+import JavaIcon from "../components/icons/JavaIcon";
+import BashIcon from "../components/icons/BashIcon";
+import GitIcon from "../components/icons/GitIcon";
+import GithubIcon from "../components/icons/GithubIcon";
 
 export const PROFILE = {
   NAME: "Salman",
@@ -314,3 +319,83 @@ export const PROJECTS: {
   //   demoLink: "",
   // },
 ];
+
+export const TECHNOLOGIES = {
+  languages: [
+    {
+      name: "Javascript",
+      icon: <JavascriptIcon className="size-5" />,
+    },
+    {
+      name: "Typescript",
+      icon: <TypescriptIcon className="size-5" />,
+    },
+    {
+      name: "Python",
+      icon: <PythonIcon className="size-5" />,
+    },
+    {
+      name: "Java",
+      icon: <JavaIcon className="size-5" />,
+    },
+    {
+      name: "BASH",
+      icon: <BashIcon className="size-5" />,
+    },
+  ],
+  frontend: [
+    {
+      name: "React",
+      icon: <ReactIcon className="size-5" />,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: <TailwindcssIcon className="size-5" />,
+    },
+
+    {
+      name: "HTML",
+      icon: <HtmlIcon className="size-5" />,
+    },
+    {
+      name: "CSS",
+      icon: <CssIcon className="size-5" />,
+    },
+  ],
+  backend: [
+    {
+      name: "Node.js",
+      icon: <NodejsIcon className="size-5" />,
+    },
+    {
+      name: "Express",
+      icon: <ExpressIcon className="size-5" />,
+    },
+  ],
+  databases: [
+    {
+      name: "MySQL",
+      icon: <MysqlIcon className="size-5" />,
+    },
+    {
+      name: "MongoDB",
+      icon: <MongodbIcon className="size-5" />,
+    },
+  ],
+  tools: [
+    {
+      name: "Prisma",
+      icon: <PrismaIcon className="size-5" />,
+    },
+    {
+      name: "Git",
+      icon: <GitIcon className="size-5" />,
+    },
+    {
+      name: "GitHub",
+      icon: <GithubIcon className="size-5" />,
+    },
+  ],
+  // TODO: learn
+  // devops: [] // coming soon
+};
