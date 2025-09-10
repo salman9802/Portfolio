@@ -119,6 +119,52 @@ export const PROJECTS: {
   demoLink?: string;
 }[] = [
   {
+    name: "AI Note Taking App",
+    image: "ai-note-taking-app-preview.png",
+    description: [
+      <span>
+        Note taking app with AI powered features: AI Summary, AI Improve and AI
+        Tags{" "}
+      </span>,
+      <span>
+        <b>Features:</b> Dark/Light theme, AI features include: generating
+        summary, improving content and grammar and generating tags for notes.
+      </span>,
+    ],
+    technologies: [
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <ExpressIcon className="size-5" />
+        express
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <ReactIcon className="size-5" />
+        React
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <NodejsIcon className="size-5" />
+        Node.js
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <PrismaIcon className="size-5 invert-70" />
+        Prisma
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <TypescriptIcon className="size-5" />
+        Typescript
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <TailwindcssIcon className="size-5" />
+        Tailwind CSS
+      </div>,
+      <div className="flex items-center gap-3 rounded-sm bg-neutral-100/10 px-3 py-1.5 font-semibold">
+        <ZodIcon className="size-5" />
+        Zod
+      </div>,
+    ],
+    githubLink: "https://github.com/salman9802/AI-Note-Taking-App",
+    demoLink: "https://ai-note-taking-app-cs0x.onrender.com/",
+  },
+  {
     name: "Skillswap - Trade skills, Build future",
     image: "skillswap-preview.png",
     description: [
