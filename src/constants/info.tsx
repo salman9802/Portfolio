@@ -28,6 +28,10 @@ import JavaIcon from "../components/icons/JavaIcon";
 import BashIcon from "../components/icons/BashIcon";
 import GitIcon from "../components/icons/GitIcon";
 import GithubIcon from "../components/icons/GithubIcon";
+import JestIcon from "../components/icons/JestIcon";
+import VitestIcon from "../components/icons/VitestIcon";
+import ReactTestingLibraryIcon from "../components/icons/ReactTestingLibraryIcon";
+import CypressIcon from "../components/icons/CypressIcon";
 
 export const PROFILE = {
   NAME: "Salman",
@@ -407,6 +411,18 @@ export const TECHNOLOGIES = {
       name: "CSS",
       icon: <CssIcon className="size-5" />,
     },
+    {
+      name: "Vitest",
+      icon: <VitestIcon className="size-5" />,
+    },
+    {
+      name: "React Testing Library",
+      icon: <ReactTestingLibraryIcon className="size-5" />,
+    },
+    {
+      name: "Cypress",
+      icon: <CypressIcon className="size-5" />,
+    },
   ],
   backend: [
     {
@@ -416,6 +432,10 @@ export const TECHNOLOGIES = {
     {
       name: "Express",
       icon: <ExpressIcon className="size-5" />,
+    },
+    {
+      name: "Jest",
+      icon: <JestIcon className="size-5" />,
     },
   ],
   databases: [
